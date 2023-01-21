@@ -1,13 +1,19 @@
+var j = 0;
+
+var toggleState = true;
+
 //background
 const backgroundText = new Array(
   document.getElementById("listItem1"),
   document.getElementById("listItem2"),
   document.getElementById("listItem3"),
+  document.getElementById("listItem4"),
   document.getElementById("header-title"),
   document.getElementById("header-text")
 );
 
 const background = document.getElementById("header");
+const menuIcon = document.getElementById("menuImage");
 
 var items = backgroundText.length - 1;
 
@@ -26,8 +32,16 @@ function toggleBtn() {
   }
 
   //change the background white
-
   background.classList.toggle("activeBackgroundColor");
 
-  console.log("here");
+  //change the menu icon
+  toggleState = !toggleState;
+
+  if (toggleState == false) {
+    menuIcon.src = "./resources/images/menu_black.png";
+  } else if (toggleState == true) {
+    menuIcon.src = "./resources/images/menu.png";
+  }
+
+  console.log("Toggled: " + ++j);
 }

@@ -9,6 +9,10 @@
   --darkBackground: #1d2026;
 }
 
+body {
+  background-color: var(--darkBackground);
+}
+
 .header {
   background: var(--darkBackground);
   min-height: 100vh;
