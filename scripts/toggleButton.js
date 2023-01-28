@@ -1,5 +1,3 @@
-var j = 0;
-
 var toggleState = true;
 
 //background
@@ -16,6 +14,8 @@ const background = document.getElementById("header");
 const menuIcon = document.getElementById("menuImage");
 
 var items = backgroundText.length - 1;
+
+var j = 0;
 
 //light
 const button = document.getElementById("toggleBtn");

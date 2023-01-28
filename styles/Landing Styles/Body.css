@@ -1,0 +1,14 @@
+.docBody{
+    margin-top: 100px;
+}
+
+.docBody #header{
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
+    justify-content:center;
+}
+
+.tile1{
+    
+}
